@@ -1,17 +1,67 @@
-# 3DTo2DProjectionCoppelia
-Simulate 3D to 2D projection in CoppeliaSim with the focal length method. Convert points for computer vision and virtual environments. Easy integration, practical demos, and contributions welcome.
+<h1 align="center">
+Using CoppeliaSim for the calculation of 3D to 2D projection
+</h1>
 
-## Description:
+<div align="center">
+<h3>
+<a href="https://www.linkedin.com/in/beatriz-emiliano/">Beatriz Emiliano Maciel de Sousa</a>
+</h3>
+</div>
+
+# Guide
+- [Description](#description)
+- [Features](#features)
+- [Technologies used](#technologies-used)
+- [Installations](#installations)
+- [Application](#application)
+
+# Description
 This repository provides an implementation in CoppeliaSim for the calculation of 3D to 2D projection using the focal length method. The goal is to transform three-dimensional points into two-dimensional pixel coordinates, simulating the projection process in a virtual camera. The method takes into account the camera's focal length to compute pixel coordinates corresponding to 3D points, crucial in various applications such as computer vision and virtual environment simulations.
+<div align="center">
 
-## Features:
+![overview](img/img1.png)
 
-- Implementation of 3D to 2D projection calculation in CoppeliaSim.
-- Practical demonstration with examples of 3D points converted into 2D pixel coordinates.
-- Detailed documentation explaining the calculation method, parameters, and usage.
+</div>
 
-## Usage Instructions:
+# Features
+- Conversion of 3D points to 2D pixel coordinates with python.
+- Simulation of projection using the focal length method.
 
-    Clone the repository into your CoppeliaSim development environment.
-    Use the provided scripts and examples to integrate the projection calculation into your own projects.
-    Refer to the documentation for a better understanding of parameters and available adjustments.
+# Technologies used:
+- Python 3.x
+- CoppeliaSim
+- NumPy
+
+# Installations:
+- CoppeliaSim 
+```
+Use the instructions on the website, I used the EDU version
+```
+<div align="center">
+
+[ site ](https://www.coppeliarobotics.com/downloads)
+
+</div>
+
+- ZeroMQ 
+ZeroMQ is a messaging library that provides asynchronous communication capabilities between processes. To install the ZeroMQ remote API for CoppeliaSim:
+```
+$ python3 -m pip install coppeliasim - zmqremoteapi - client
+```
+
+# Application
+
+- Open the CoppeliaSim software:
+```
+$ cd ~/CoppeliaSimPath
+$ ./coppeliaSim.sh
+```
+- Load the scene: 
+```
+File > Open scene... >> projetcion.ttt
+```
+- Run the code
+```
+$ cd ~/3Dto2DProjectionCoppelia/script
+$ python3 projection.py
+```
