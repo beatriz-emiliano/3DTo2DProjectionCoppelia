@@ -60,6 +60,14 @@ $ ./coppeliaSim.sh
 ```
 File > Open scene... >> projetcion.ttt
 ```
+- Check the specifications of your vision sensor and adjust in the code, by default, the scene values are these:
+
+<div align="center">
+
+![overview](img/im2.png)
+
+</div>
+
 - Run the code
 ```
 $ cd ~/3Dto2DProjectionCoppelia/script
